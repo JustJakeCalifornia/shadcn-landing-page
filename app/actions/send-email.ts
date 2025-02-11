@@ -2,7 +2,7 @@
 
 import { Resend } from "resend";
 import * as React from "react";
-import EmailTemplate from "@/components/email-template";
+import EmailTemplate from "@/components/templates/email-template";
 import { ContactFormValues, contactSchema } from "@/lib/schemas/contact-schema";
 import { headers } from "next/headers";
 import { rateLimiter } from "@/lib/rate-limit";
