@@ -1,4 +1,3 @@
-import GithubIcon from "@/components/icons/github-icon";
 import LinkedInIcon from "@/components/icons/linkedin-icon";
 import XIcon from "@/components/icons/x-icon";
 import {
@@ -167,8 +166,6 @@ export const TeamSection = () => {
     switch (socialName) {
       case "LinkedIn":
         return <LinkedInIcon />;
-      case "Github":
-        return <GithubIcon />;
       case "X":
         return <XIcon />;
     }
