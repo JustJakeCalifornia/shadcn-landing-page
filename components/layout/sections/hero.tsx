@@ -65,20 +65,18 @@ export const HeroSection = () => {
           </div>
         </div>
 
-        <div className="relative w-full mt-14">
-          <Tabs
-            value={activeTab}
-            onValueChange={setActiveTab}
-            className="w-full"
-          >
-            <TabsList className="mb-4">
-              <TabsTrigger value="control-panel">Control Panel</TabsTrigger>
-              <TabsTrigger value="ios-app">iOS app</TabsTrigger>
-            </TabsList>
+        <div className="relative group mt-14">
+          <Tabs value={activeTab} onValueChange={setActiveTab}>
+            <div className="flex justify-center mb-4">
+              <TabsList>
+                <TabsTrigger value="control-panel">Control Panel</TabsTrigger>
+                <TabsTrigger value="ios-app">iOS app</TabsTrigger>
+              </TabsList>
+            </div>
 
-            <div className="w-full">
-              <TabsContent value="control-panel" className="mt-0">
-                <Carousel className="w-full">
+            <div className="overflow-hidden relative">
+              <TabsContent value="control-panel">
+                <Carousel>
                   <CarouselContent>
                     <CarouselItem className="flex justify-center">
                       <Image
@@ -99,13 +97,13 @@ export const HeroSection = () => {
                       />
                     </CarouselItem>
                   </CarouselContent>
-                  <CarouselPrevious />
-                  <CarouselNext />
+                  <CarouselPrevious className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10" />
+                  <CarouselNext className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10" />
                 </Carousel>
               </TabsContent>
 
-              <TabsContent value="ios-app" className="mt-0">
-                <Carousel className="w-full">
+              <TabsContent value="ios-app">
+                <Carousel>
                   <CarouselContent>
                     <CarouselItem className="flex justify-center">
                       <Image
@@ -126,8 +124,8 @@ export const HeroSection = () => {
                       />
                     </CarouselItem>
                   </CarouselContent>
-                  <CarouselPrevious />
-                  <CarouselNext />
+                  <CarouselPrevious className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10" />
+                  <CarouselNext className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10" />
                 </Carousel>
               </TabsContent>
             </div>
