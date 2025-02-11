@@ -10,9 +10,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useState } from "react";
 
 export const HeroSection = () => {
-  const { theme } = useTheme();
+  const [activeTab, setActiveTab] = useState("control-panel");
+
   return (
     <section className="container w-full">
       <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
@@ -62,33 +65,73 @@ export const HeroSection = () => {
           </div>
         </div>
 
-        <div className="relative group mt-14">
-          <div className="absolute top-2 lg:-top-8 left-1/2 transform -translate-x-1/2 w-[90%] mx-auto h-24 lg:h-80 bg-primary/50 rounded-full blur-3xl"></div>
-          <Carousel>
-            <CarouselContent>
-              <CarouselItem>
-                <Image
-                  width={1200}
-                  height={1200}
-                  className="w-full md:w-[1200px] mx-auto rounded-lg leading-none flex items-center border border-t-2 border-secondary border-t-primary/30"
-                  src="/hero-image-light.jpeg"
-                  alt="dashboard light"
-                />
-              </CarouselItem>
-              <CarouselItem>
-                <Image
-                  width={1200}
-                  height={1200}
-                  className="w-full md:w-[1200px] mx-auto rounded-lg leading-none flex items-center border border-t-2 border-secondary border-t-primary/30"
-                  src="/hero-image-dark.jpeg"
-                  alt="dashboard dark"
-                />
-              </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
-          <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"></div>
+        <div className="relative w-full mt-14">
+          <Tabs
+            value={activeTab}
+            onValueChange={setActiveTab}
+            className="w-full"
+          >
+            <TabsList className="mb-4">
+              <TabsTrigger value="control-panel">Control Panel</TabsTrigger>
+              <TabsTrigger value="ios-app">iOS app</TabsTrigger>
+            </TabsList>
+
+            <div className="w-full">
+              <TabsContent value="control-panel" className="mt-0">
+                <Carousel className="w-full">
+                  <CarouselContent>
+                    <CarouselItem className="flex justify-center">
+                      <Image
+                        width={1200}
+                        height={1200}
+                        className="w-full max-w-[1200px] rounded-lg border border-t-2 border-secondary border-t-primary/30"
+                        src="/hero-image-light.jpeg"
+                        alt="dashboard light"
+                      />
+                    </CarouselItem>
+                    <CarouselItem className="flex justify-center">
+                      <Image
+                        width={1200}
+                        height={1200}
+                        className="w-full max-w-[1200px] rounded-lg border border-t-2 border-secondary border-t-primary/30"
+                        src="/hero-image-dark.jpeg"
+                        alt="dashboard dark"
+                      />
+                    </CarouselItem>
+                  </CarouselContent>
+                  <CarouselPrevious />
+                  <CarouselNext />
+                </Carousel>
+              </TabsContent>
+
+              <TabsContent value="ios-app" className="mt-0">
+                <Carousel className="w-full">
+                  <CarouselContent>
+                    <CarouselItem className="flex justify-center">
+                      <Image
+                        width={1200}
+                        height={1200}
+                        className="w-full max-w-[1200px] rounded-lg border border-t-2 border-secondary border-t-primary/30"
+                        src="/hero-image-light.jpeg"
+                        alt="iOS app image 1"
+                      />
+                    </CarouselItem>
+                    <CarouselItem className="flex justify-center">
+                      <Image
+                        width={1200}
+                        height={1200}
+                        className="w-full max-w-[1200px] rounded-lg border border-t-2 border-secondary border-t-primary/30"
+                        src="/hero-image-dark.jpeg"
+                        alt="iOS app image 2"
+                      />
+                    </CarouselItem>
+                  </CarouselContent>
+                  <CarouselPrevious />
+                  <CarouselNext />
+                </Carousel>
+              </TabsContent>
+            </div>
+          </Tabs>
         </div>
       </div>
     </section>
