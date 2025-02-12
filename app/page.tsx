@@ -6,7 +6,7 @@ import { FooterSection } from "@/components/layout/sections/footer";
 import { HeroSection } from "@/components/layout/sections/hero";
 import { ModulesSection } from "@/components/layout/sections/modules";
 import { SponsorsSection } from "@/components/layout/sections/sponsors";
-import { ProcessExplanationSection } from "@/components/layout/sections/process";
+import { OnboardingSection } from "@/components/layout/sections/onboarding";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 
 export const metadata = {
@@ -45,8 +45,8 @@ export default function Home() {
       <BenefitsSection />
       <FeaturesSection />
       <ModulesSection />
+      <OnboardingSection />
       <TestimonialSection />
-      <ProcessExplanationSection />
       {/* <PricingSection /> */}
       <ContactSection />
       <FAQSection />
