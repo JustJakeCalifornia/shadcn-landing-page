@@ -27,16 +27,18 @@ function AnimatedStep({ step, index }: any) {
       custom={index}
     >
       <div className="flex gap-6">
-        <div className="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 border-primary bg-white text-sm font-semibold">
+        <div className="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 border-primary bg-background text-sm font-semibold">
           {step.number}
         </div>
         <div className="flex flex-1 items-start gap-4">
           <div className="space-y-1">
-            <h3 className="text-lg font-medium leading-tight">{step.title}</h3>
+            <h3 className="text-lg font-medium leading-tight text-foreground">
+              {step.title}
+            </h3>
             <p className="text-sm text-muted-foreground">{step.description}</p>
           </div>
-          <Card className="hidden sm:flex h-16 w-16 shrink-0 items-center justify-center bg-gray-50 border-0">
-            <step.icon className="h-8 w-8 text-gray-500" />
+          <Card className="hidden sm:flex h-16 w-16 shrink-0 items-center justify-center bg-muted border-0">
+            <step.icon className="h-8 w-8 text-muted-foreground" />
           </Card>
         </div>
       </div>
@@ -75,7 +77,7 @@ export const OnboardingSection = () => {
         Onboarding
       </h2>
 
-      <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
+      <h2 className="text-3xl md:text-4xl text-center font-bold mb-4 text-foreground">
         How it works
       </h2>
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
@@ -85,7 +87,7 @@ export const OnboardingSection = () => {
       <div className="max-w-3xl mx-auto px-4 py-8">
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-[1.35rem] top-0 bottom-[2.5rem] w-0.5 bg-gray-200" />
+          <div className="absolute left-[1.35rem] top-0 bottom-[2.5rem] w-0.5 bg-border" />
 
           <div className="space-y-8">
             {steps.map((step, index) => (
