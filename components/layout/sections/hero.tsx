@@ -70,7 +70,7 @@ export const HeroSection = () => {
             <div className="flex justify-center mb-4">
               <TabsList>
                 <TabsTrigger value="control-panel">Control Panel</TabsTrigger>
-                <TabsTrigger value="ios-app">iOS app</TabsTrigger>
+                <TabsTrigger value="ios-app">iOS App</TabsTrigger>
               </TabsList>
             </div>
 

@@ -134,13 +134,13 @@ export const Navbar = () => {
             </NavigationMenuTrigger>
             <NavigationMenuContent>
               <div className="grid w-[600px] grid-cols-2 gap-5 p-4">
-                <Image
+                {/* <Image
                   src="https://avatars.githubusercontent.com/u/75042455?v=4"
                   alt="RadixLogo"
                   className="h-full w-full rounded-md object-cover"
                   width={600}
                   height={600}
-                />
+                /> */}
                 <ul className="flex flex-col gap-2">
                   {featureList.map(({ title, description }) => (
                     <li
@@ -174,14 +174,6 @@ export const Navbar = () => {
 
       <div className="hidden lg:flex">
         <ToggleTheme />
-
-        <Button asChild size="sm" variant="ghost" aria-label="View on GitHub">
-          <Link
-            aria-label="View on GitHub"
-            href="https://github.com/nobruf/shadcn-landing-page.git"
-            target="_blank"
-          ></Link>
-        </Button>
       </div>
     </header>
   );
