@@ -11,27 +11,27 @@ interface BenefitsProps {
 const benefitList: BenefitsProps[] = [
   {
     icon: "Blocks",
-    title: "Build Brand Trust",
+    title: "Streamline Asset Management",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Efficiently document and manage municipal assets with our structured digital solution. Transform complex infrastructure data into organized, accessible records.",
   },
   {
     icon: "LineChart",
-    title: "More Leads",
+    title: "Enhance Decision Making",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "Make informed decisions with comprehensive asset data at your fingertips. Track maintenance needs, identify patterns, and optimize resource allocation.",
   },
   {
     icon: "Wallet",
-    title: "Higher Conversions",
+    title: "Reduce Operational Costs",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      "Cut down on manual documentation efforts and minimize maintenance oversights. Our system helps prevent costly repairs through better tracking and early intervention.",
   },
   {
     icon: "Sparkle",
-    title: "Test Marketing Ideas",
+    title: "Improve Service Quality",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Deliver better public services through systematic asset monitoring. From street lighting to urban greenery, ensure every asset receives timely attention.",
   },
 ];
 
@@ -46,9 +46,10 @@ export const BenefitsSection = () => {
             Your Shortcut to Success
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            ducimus reprehenderit architecto rerum similique facere odit
-            deleniti necessitatibus quo quae.
+            Modernize your infrastructure management with our digital solution.
+            From street furniture to urban greenery, efficiently track and
+            maintain your municipal assets while reducing costs and improving
+            service delivery.
           </p>
         </div>
 
