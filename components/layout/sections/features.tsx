@@ -10,40 +10,40 @@ interface FeaturesProps {
 
 const featureList: FeaturesProps[] = [
   {
+    icon: "ClipboardList",
+    title: "Digital Documentation",
+    description:
+      "Easily document and manage city infrastructure including gullies, trees, street lights, and more.",
+  },
+  {
     icon: "TabletSmartphone",
-    title: "Mobile Friendly",
+    title: "iOS app",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      "Easily document and manage city infrastructure including gullies, trees, street lights, and more.",
   },
   {
-    icon: "BadgeCheck",
-    title: "Social Proof",
+    icon: "Sparkle",
+    title: "Real-Time Updates",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
-  },
-  {
-    icon: "Goal",
-    title: "Targeted Content",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "Instant communication between office staff and field workers for efficient task management.",
   },
   {
     icon: "PictureInPicture",
     title: "Strong Visuals",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      "Clean and modern UI that enhances usability and accessibility, making navigation effortless.",
   },
   {
-    icon: "MousePointerClick",
-    title: "Clear CTA",
+    icon: "Bell",
+    title: "Smart Notifications",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      "Automated alerts for maintenance schedules, urgent repairs, and task assignments.",
   },
   {
-    icon: "Newspaper",
-    title: "Clear Headline",
+    icon: "BarChart3",
+    title: "Control Panel",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "Comprehensive reporting and analytics to track efficiency and make data-driven decisions.",
   },
 ];
 
@@ -59,9 +59,10 @@ export const FeaturesSection = () => {
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-        facere tenetur.
+        Transforming municipal efficiency by streamlining the documentation of
+        essential assets like gullies, trees, and street lights. Our solutions
+        empower local governments to manage their resources effectively and
+        enhance community services.
       </h3>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
