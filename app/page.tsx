@@ -1,14 +1,12 @@
 import { BenefitsSection } from "@/components/layout/sections/benefits";
-import { CommunitySection } from "@/components/layout/sections/community";
 import { ContactSection } from "@/components/layout/sections/contact";
 import { FAQSection } from "@/components/layout/sections/faq";
 import { FeaturesSection } from "@/components/layout/sections/features";
 import { FooterSection } from "@/components/layout/sections/footer";
 import { HeroSection } from "@/components/layout/sections/hero";
-import { PricingSection } from "@/components/layout/sections/pricing";
 import { ModulesSection } from "@/components/layout/sections/modules";
 import { SponsorsSection } from "@/components/layout/sections/sponsors";
-import { TeamSection } from "@/components/layout/sections/team";
+import { ProcessExplanationSection } from "@/components/layout/sections/process";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 
 export const metadata = {
@@ -48,9 +46,8 @@ export default function Home() {
       <FeaturesSection />
       <ModulesSection />
       <TestimonialSection />
-      <TeamSection />
-      <CommunitySection />
-      <PricingSection />
+      <ProcessExplanationSection />
+      {/* <PricingSection /> */}
       <ContactSection />
       <FAQSection />
       <FooterSection />

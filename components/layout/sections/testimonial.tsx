@@ -17,7 +17,6 @@ import {
 import { Star } from "lucide-react";
 
 interface ReviewProps {
-  image: string;
   name: string;
   userName: string;
   comment: string;
@@ -26,53 +25,46 @@ interface ReviewProps {
 
 const reviewList: ReviewProps[] = [
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe",
-    userName: "Product Manager",
+    name: "Charlotte Brown",
+    userName: "UX Designer at Aussie Digital Lab (Australia)",
     comment:
-      "Wow NextJs + Shadcn is awesome!. This template lets me change colors, fonts and images to match my brand identity. ",
+      "We introduced this solution to several local councils, and the response was overwhelmingly positive. The platform’s modern UI and quick documentation process for assets like streetlights and trees have significantly streamlined municipal workflows.",
+    rating: 4.9,
+  },
+  {
+    name: "Johann Müller",
+    userName: "Geschäftsführer at BerlinTech GmbH (Germany)",
+    comment:
+      "Unsere Gemeinde-Partner sind begeistert von der benutzerfreundlichen iOS- und Web-App. Ob Straßenlaternen, Bäume oder Mülleimer – die Dokumentation war noch nie so einfach. Ein echter Gewinn für die kommunale Verwaltung!",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Sophia Collins",
-    userName: "Cybersecurity Analyst",
+    name: "Jessica Thompson",
+    userName: "Marketing Director at Acme Corp (U.S.)",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. ",
+      "We’ve helped multiple cities adopt this platform, and the feedback has been fantastic. The ability to track and update various assets on both iOS and web—like gullies and streetlights—has genuinely transformed local government operations.",
     rating: 4.8,
   },
-
   {
-    image: "https://github.com/shadcn.png",
-    name: "Adam Johnson",
-    userName: "Chief Technology Officer",
+    name: "Helena Schulz",
+    userName: "Lead Developer at München Innovations (Germany)",
     comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "Die Integration eines zentralen Systems zur Erfassung von Straßenlaternen, Bäumen und Co. funktioniert reibungslos. Vor allem das Echtzeit-Reporting und die intuitive Bedienung sind ein großes Plus für unsere Kommunen.",
     rating: 4.9,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Ethan Parker",
-    userName: "Data Scientist",
+    name: "Oliver Smith",
+    userName: "CTO at SydneyTech Solutions (Australia)",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "This platform offers one of the most efficient ways to manage municipal data that I’ve seen. From iOS app to web dashboard, the flow is seamless, and our clients love how quick it is to document assets like rubbish bins and streetlights.",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Ava Mitchell",
-    userName: "IT Project Manager",
+    name: "Michael Anderson",
+    userName: "CEO at Redwood Analytics (U.S.)",
     comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
+      "Adopting this software has made asset tracking effortless for our partner municipalities. The simple user interface and real-time updates on everything from gullies to garbage cans mean cities can operate far more efficiently.",
     rating: 5.0,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Isabella Reed",
-    userName: "DevOps Engineer",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    rating: 4.9,
   },
 ];
 
@@ -115,14 +107,6 @@ export const TestimonialSection = () => {
 
                 <CardHeader>
                   <div className="flex flex-row items-center gap-4">
-                    <Avatar>
-                      <AvatarImage
-                        src="https://avatars.githubusercontent.com/u/75042455?v=4"
-                        alt="radix"
-                      />
-                      <AvatarFallback>SV</AvatarFallback>
-                    </Avatar>
-
                     <div className="flex flex-col">
                       <CardTitle className="text-lg">{review.name}</CardTitle>
                       <CardDescription>{review.userName}</CardDescription>
