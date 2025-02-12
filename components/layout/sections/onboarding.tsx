@@ -72,7 +72,7 @@ export const OnboardingSection = () => {
   ];
 
   return (
-    <section id="process" className="container py-24 sm:py-32">
+    <section id="onboarding" className="container py-24 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
         Onboarding
       </h2>
@@ -81,8 +81,8 @@ export const OnboardingSection = () => {
         How it works
       </h2>
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        These are the steps to seamlessly welcome your new municipal management
-        software, called GonzoCity.
+        These are the steps to seamlessly start your journey towards more
+        efficient city management.
       </h3>
       <div className="max-w-3xl mx-auto px-4 py-8">
         <div className="relative">
