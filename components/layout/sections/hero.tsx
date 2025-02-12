@@ -48,26 +48,16 @@ export const HeroSection = () => {
             <ContactDialog buttonName="Start Free Trial" buttonSize="lg" />
             <Button variant="default" className="w-5/6 md:w-1/4 font-bold">
               <Smartphone className="mr-2 h-4 w-4"></Smartphone>
-              <a href="https://google.com" target="_blank">
+              <a
+                href="https://apps.apple.com/us/app/id1619621325"
+                target="_blank"
+              >
                 Download iOS app
               </a>
             </Button>
             {/* <Button className="w-5/6 md:w-1/4 font-bold group/arrow">
               Get Started
               <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
-            </Button> */}
-
-            {/* <Button
-              asChild
-              variant="secondary"
-              className="w-5/6 md:w-1/4 font-bold"
-            >
-              <Link
-                href="https://github.com/nobruf/shadcn-landing-page.git"
-                target="_blank"
-              >
-                Github respository
-              </Link>
             </Button> */}
           </div>
         </div>
