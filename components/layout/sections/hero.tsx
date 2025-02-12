@@ -1,7 +1,6 @@
 "use client";
 import ContactDialog from "@/components/dialogs/contact-dialog";
 import { Badge } from "@/components/ui/badge";
-import { useTheme } from "next-themes";
 import Image from "next/image";
 import {
   Carousel,
@@ -12,6 +11,8 @@ import {
 } from "@/components/ui/carousel";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Smartphone } from "lucide-react";
 
 export const HeroSection = () => {
   const [activeTab, setActiveTab] = useState("control-panel");
@@ -45,6 +46,12 @@ export const HeroSection = () => {
 
           <div className="space-y-4 md:space-y-0 md:space-x-4">
             <ContactDialog buttonName="Start Free Trial" buttonSize="lg" />
+            <Button variant="default" className="w-5/6 md:w-1/4 font-bold">
+              <Smartphone className="mr-2 h-4 w-4"></Smartphone>
+              <a href="https://google.com" target="_blank">
+                Download iOS app
+              </a>
+            </Button>
             {/* <Button className="w-5/6 md:w-1/4 font-bold group/arrow">
               Get Started
               <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
