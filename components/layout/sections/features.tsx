@@ -17,15 +17,15 @@ const featureList: FeaturesProps[] = [
   },
   {
     icon: "TabletSmartphone",
-    title: "iOS app",
+    title: "iOS App",
     description:
       "Easily document and manage city infrastructure including gullies, trees, street lights, and more.",
   },
   {
-    icon: "Sparkle",
-    title: "Real-Time Updates",
+    icon: "BarChart3",
+    title: "Control Panel",
     description:
-      "Instant communication between office staff and field workers for efficient task management.",
+      "Comprehensive reporting and analytics to track efficiency and make data-driven decisions.",
   },
   {
     icon: "PictureInPicture",
@@ -34,16 +34,16 @@ const featureList: FeaturesProps[] = [
       "Clean and modern UI that enhances usability and accessibility, making navigation effortless.",
   },
   {
+    icon: "Sparkle",
+    title: "Real-Time Updates",
+    description:
+      "Instant communication between office staff and field workers for efficient task management.",
+  },
+  {
     icon: "Bell",
     title: "Smart Notifications",
     description:
       "Automated alerts for maintenance schedules, urgent repairs, and task assignments.",
-  },
-  {
-    icon: "BarChart3",
-    title: "Control Panel",
-    description:
-      "Comprehensive reporting and analytics to track efficiency and make data-driven decisions.",
   },
 ];
 
