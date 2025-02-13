@@ -16,27 +16,18 @@ export const FooterSection = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Contact</h3>
+            <h3 className="font-bold text-lg">Socials</h3>
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Github
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Twitter
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
+              <Link
+                href="https://instagram.com/gullygonzo"
+                className="opacity-60 hover:opacity-100"
+              >
                 Instagram
               </Link>
             </div>
           </div>
 
-          <div className="flex flex-col gap-2">
+          {/* <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Platforms</h3>
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
@@ -55,46 +46,55 @@ export const FooterSection = () => {
                 Web
               </Link>
             </div>
-          </div>
+          </div> */}
 
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Help</h3>
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Contact Us
+              <Link href="#contac" className="opacity-60 hover:opacity-100">
+                Contact
               </Link>
             </div>
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
+              <Link href="#faq" className="opacity-60 hover:opacity-100">
                 FAQ
               </Link>
             </div>
 
-            <div>
+            {/* <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
                 Feedback
               </Link>
-            </div>
+            </div> */}
           </div>
 
           <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Socials</h3>
+            <h3 className="font-bold text-lg">Legal</h3>
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Twitch
+              <Link
+                href="/legal/termsofservice"
+                className="opacity-60 hover:opacity-100"
+              >
+                Terms of Service
               </Link>
             </div>
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Discord
+              <Link
+                href="/legal/privacypolicy"
+                className="opacity-60 hover:opacity-100"
+              >
+                Privacy Policy
               </Link>
             </div>
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Dribbble
+              <Link
+                href="/legal/legalnotice"
+                className="opacity-60 hover:opacity-100"
+              >
+                Legal Notice
               </Link>
             </div>
           </div>
