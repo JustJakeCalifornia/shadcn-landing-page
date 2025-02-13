@@ -16,11 +16,9 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from "../ui/navigation-menu";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import Image from "next/image";
 import { ToggleTheme } from "./toogle-theme";
 
 interface RouteProps {
@@ -28,19 +26,26 @@ interface RouteProps {
   label: string;
 }
 
-interface FeatureProps {
-  title: string;
-  description: string;
-}
-
 const routeList: RouteProps[] = [
+  {
+    href: "#benefits",
+    label: "Benefits",
+  },
+  {
+    href: "#features",
+    label: "Features",
+  },
+  {
+    href: "#modules",
+    label: "Modules",
+  },
+  {
+    href: "#onboarding",
+    label: "Onboarding",
+  },
   {
     href: "#testimonials",
     label: "Testimonials",
-  },
-  {
-    href: "#team",
-    label: "Team",
   },
   {
     href: "#contact",
@@ -49,23 +54,6 @@ const routeList: RouteProps[] = [
   {
     href: "#faq",
     label: "FAQ",
-  },
-];
-
-const featureList: FeatureProps[] = [
-  {
-    title: "Showcase Your Value ",
-    description: "Highlight how your product solves user problems.",
-  },
-  {
-    title: "Build Trust",
-    description:
-      "Leverages social proof elements to establish trust and credibility.",
-  },
-  {
-    title: "Capture Leads",
-    description:
-      "Make your lead capture form visually appealing and strategically.",
   },
 ];
 
@@ -118,7 +106,7 @@ export const Navbar = () => {
 
             <SheetFooter className="flex-col sm:flex-col justify-start items-start">
               <Separator className="mb-2" />
-
+              <Button variant="outline">Sign in</Button>
               <ToggleTheme />
             </SheetFooter>
           </SheetContent>
@@ -128,38 +116,6 @@ export const Navbar = () => {
       {/* <!-- Desktop --> */}
       <NavigationMenu className="hidden lg:block mx-auto">
         <NavigationMenuList>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-card text-base">
-              Features
-            </NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <div className="grid w-[600px] grid-cols-2 gap-5 p-4">
-                {/* <Image
-                  src="https://avatars.githubusercontent.com/u/75042455?v=4"
-                  alt="RadixLogo"
-                  className="h-full w-full rounded-md object-cover"
-                  width={600}
-                  height={600}
-                /> */}
-                <ul className="flex flex-col gap-2">
-                  {featureList.map(({ title, description }) => (
-                    <li
-                      key={title}
-                      className="rounded-md p-3 text-sm hover:bg-muted"
-                    >
-                      <p className="mb-1 font-semibold leading-none text-foreground">
-                        {title}
-                      </p>
-                      <p className="line-clamp-2 text-muted-foreground">
-                        {description}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-
           <NavigationMenuItem>
             {routeList.map(({ href, label }) => (
               <NavigationMenuLink key={href} asChild>
@@ -173,6 +129,7 @@ export const Navbar = () => {
       </NavigationMenu>
 
       <div className="hidden lg:flex">
+        <Button variant="outline">Sign in</Button>
         <ToggleTheme />
       </div>
     </header>
