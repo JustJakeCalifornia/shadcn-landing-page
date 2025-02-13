@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
+  CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
@@ -78,27 +79,23 @@ export const ModulesSection = () => {
               NEW
             </Badge>
 
-            <CardHeader className="p-8">
-              <div className="flex flex-col gap-6">
-                <div className="w-16 h-16 relative shrink-0 rounded-2xl overflow-hidden bg-muted/30 p-2 ring-2 ring-muted/20 group-hover:ring-primary/20 transition-all duration-300">
+            <CardContent className="p-6">
+              <div className="flex gap-6">
+                <div className="relative w-16 h-16 rounded-xl overflow-hidden flex-shrink-0 shadow-sm">
                   <Image
                     src={logo}
                     alt={`${title} logo`}
                     fill
-                    className="object-contain p-2"
+                    className="object-cover hover:scale-105 transition-transform duration-300"
+                    sizes="64px"
                   />
                 </div>
-
-                <div className="space-y-3">
-                  <CardTitle className="text-2xl font-semibold tracking-tight">
-                    {title}
-                  </CardTitle>
-                  <CardDescription className="text-base leading-relaxed text-muted-foreground">
-                    {description}
-                  </CardDescription>
+                <div className="flex flex-col gap-2">
+                  <h2 className="text-2xl font-bold">{title}</h2>
+                  <p className="text-muted-foreground">{description}</p>
                 </div>
               </div>
-            </CardHeader>
+            </CardContent>
           </Card>
         ))}
       </div>
