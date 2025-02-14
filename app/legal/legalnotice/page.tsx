@@ -2,7 +2,7 @@ import { Separator } from "@/components/ui/separator";
 
 export default function LegalNotice() {
   return (
-    <div className="min-h-screen bg-white dark:bg-black text-gray-900 dark:text-white p-8 md:p-16">
+    <div className="min-h-screen bg-background dark:bg-background text-gray-900 dark:text-white p-8 md:p-16">
       <div className="max-w-3xl mx-auto space-y-12">
         <h1 className="text-5xl font-bold mb-16">Legal Notice</h1>
 
